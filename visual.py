@@ -49,7 +49,7 @@ def operationI(obj1, obj2):
     if (previous[0] is not None):
         if (previous[0] == 0 and previous[2] == cpos[pos3]):
             x, y = 0, 0.75
-        elif (previous[0] == 1 and pos[previous[1]] + pos[previous[2]] != pos1 + pos2):
+        elif (previous[0] == 1 and (pos[previous[1]] + pos[previous[2]] != pos1 + pos2)):
             x, y = psD2arr[pos2].iloc[pos1], psD2arr[pos2].iloc[pos1 + 9]
     picture = sg.Point(float(x), float(y)).buffer(0.2)
     return [picture, None, 0.75, True]
@@ -62,7 +62,7 @@ def operationO(obj1, obj2):
                 x, y = psD2arr[pos2].iloc[pos1 + 6], psD2arr[pos2].iloc[pos1 + 15]
             elif (previous[1] == cpos[pos3] and previous[2] == obj2):
                 x, y = psD2arr[pos2].iloc[pos1 + 3], psD2arr[pos2].iloc[pos1 + 12]
-        elif (previous[0] == 1 and pos[previous[1]] + pos[previous[2]] == pos1 + pos2):
+        elif (previous[0] == 1 and (pos[previous[1]] + pos[previous[2]] == pos1 + pos2)):
             x, y = psD2arr[pos2].iloc[pos1 + 3], psD2arr[pos2].iloc[pos1 + 12]
     picture = sg.Point(float(x), float(y)).buffer(0.2)
     return [picture, None, 0.75, True]
