@@ -20,8 +20,8 @@ sCircle = sg.Point(-3, 3).buffer(5)
 mCircle = sg.Point(0, -3).buffer(5)
 
 circles = {"P":pCircle, "S":sCircle, "M":mCircle}
-pos = {"P":0, "S":1, "M":2}
-cpos = {0:"P", 1:"S", 2:"M"}
+pos = {"P":1, "S":0, "M":2}
+cpos = {1:"P", 0:"S", 2:"M"}
 
 # Previous Statement
 previous = [None, None, None]
