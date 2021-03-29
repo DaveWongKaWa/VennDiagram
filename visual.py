@@ -55,7 +55,7 @@ def operationI(obj1, obj2):
     return [picture, None, 0.75, True]
 def operationO(obj1, obj2):
     pos1, pos2, pos3 = pos[obj1], pos[obj2], 3 - (pos[obj1] + pos[obj2])
-    x, y = psD1arr[pos2].iloc[pos1 + 3], psD1arr[pos2].iloc[pos1 + 6]
+    x, y = psD1arr[pos2].iloc[pos1 + 3], psD1arr[pos2].iloc[pos1 + 9]
     if (previous[0] is not None):
         if (previous[0] == 0):
             if (previous[1] == obj1 and previous[2] == cpos[pos3]):
