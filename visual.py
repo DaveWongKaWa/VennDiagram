@@ -10,9 +10,9 @@ sns.set_theme(style="white")
 # Funtionalities
 #------------------------------------------------------------------------------------------------------
 # Data of Points
-psD1 = pd.read_csv("https://github.com/DaveWongKaWa/Programmes/blob/main/VennDiagramD1xy.csv?raw=true")
+psD1 = pd.read_csv("https://github.com/DaveWongKaWa/vennDiagram/blob/main/VennDiagramD1xy.csv?raw=true")
 psD1arr = [psD1.S, psD1.P, psD1.M]
-psD2 = pd.read_csv("https://github.com/DaveWongKaWa/Programmes/blob/main/VennDiagramD2xy.csv?raw=true")
+psD2 = pd.read_csv("https://github.com/DaveWongKaWa/vennDiagram/blob/main/VennDiagramD2xy.csv?raw=true")
 psD2arr = [psD2.S, psD2.P, psD2.M]
 
 pCircle = sg.Point(3, 3).buffer(5)
