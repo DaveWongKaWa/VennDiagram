@@ -138,6 +138,7 @@ class Drawer:
         return ax
     def renderConclusion(self):
         ax = self.renderBackground()
+        previous.clear()
         arg = args(self.c[0], self.c[1], self.c[2])
         ax.add_patch(dc.PolygonPatch(arg[0], fc="black", ec="black", hatch=arg[1], alpha=arg[2], fill=arg[3]))
         ax.set_title("Conclusion")
