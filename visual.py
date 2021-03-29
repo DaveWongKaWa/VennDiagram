@@ -147,7 +147,7 @@ st.title("Venn Diagram")
 option = st.sidebar.selectbox(
     'Statements / Standard Form',
      ['Statements', 'Standard Form'])
-'--', option, '--'
+st.title(option)
 #------------------------------------------------------------------------------------------------------
 if (option == 'Statements'):
     st.subheader("Syntax")
